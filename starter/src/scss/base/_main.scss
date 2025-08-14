@@ -11,8 +11,6 @@
         margin:1rem;
         width: clamp(40%, 400px, 70%);
         height: clamp(40%, 400px, 70%);
-        border: 1px solid #ffc97b;
-        box-shadow: 3px 3px 3px 3px grey;
     }
     
 
@@ -26,7 +24,6 @@
         text-align: center;
         font-size: clamp(2rem, 6vw, 8rem);
         font-weight: bold;
-        text-shadow: 3px 3px 5px grey;
     }
 
     &__main {
@@ -37,14 +34,7 @@
 
     &__button {
         padding:0.5rem;
-        width:fit-content;
-        background-color: #fbf4f9;
-        border-color: #ffc97b;
-
-        &:hover {
-            background-color: #ffe6eb;
-            box-shadow: 0 0 1px 1px grey;
-        }
+        border-radius:10%;
     }
 }
 
@@ -59,7 +49,6 @@
         text-align:center;        
         font-size: clamp(2rem, 6vw, 8rem);
         font-weight: bold;
-        text-shadow: 3px 3px 5px grey;
 
     }
 
@@ -79,24 +68,16 @@
     &__cell {
         margin:1rem;
         padding:40%;
-        border:1px solid #ffc97b;
-        box-shadow: 3px 3px 3px 3px grey;
     }
 
     &__button {
         padding:0.5rem;
-        width:fit-content;
-        background-color: #fbf4f9;
-        border-color: #ffc97b;
-
-        &:hover {
-            background-color: #ffe6eb;
-            box-shadow: 0 0 1px 1px grey;
-        }
-    }
+        border-radius:10%;
+        
     
 }
 
 .content{
     display: flex;
+}
 }

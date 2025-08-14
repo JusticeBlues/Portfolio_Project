@@ -1,0 +1,110 @@
+@media (prefers-color-scheme: dark) {
+    
+    * {
+        background-color: #34495e;
+    }
+
+    .bio {
+        color: #e3f6f5;
+    
+        &__photo {
+            border: 1px solid #5a37c3;
+            box-shadow: 3px 3px 3px 3px #142d4c;
+        }
+        
+        &__header {
+            text-shadow: 3px 3px 5px #142d4c;
+        }
+
+        &__button {
+            background-color: #0cca98;
+            border-color: #5a37c3;
+
+            &:hover {
+                background-color: #00ffcc;
+                box-shadow: 0 0 1px 1px #142d4c;
+            }
+        }
+    }
+
+    .latest-projects {
+
+        color: #e3f6f5;
+        
+        &__header {
+            text-shadow: 3px 3px 5px #142d4c;
+        }
+
+        &__cell {
+            border:1px solid #5a37c3;
+            box-shadow: 3px 3px 3px 3px #142d4c;
+        }
+
+        &__button {
+            background-color: #0cca98;
+            border-color: #5a37c3;
+
+            &:hover {
+                background-color: #00ffcc;
+                box-shadow: 0 0 1px 1px #142d4c;
+            }
+        }
+        
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    
+    * {
+        background-color: #e6f7f7;
+    }
+
+    .bio {
+        
+        color: #000000;
+    
+        &__photo {
+            border: 1px solid #ffc97b;
+            box-shadow: 3px 3px 3px 3px grey;
+        }
+        
+        &__header {
+            text-shadow: 3px 3px 5px grey;
+        }
+
+        &__button {
+            background-color: #fbf4f9;
+            border-color: #ffc97b;
+
+            &:hover {
+                background-color: #ffe6eb;
+                box-shadow: 0 0 1px 1px grey;
+            }
+        }
+    }
+
+    .latest-projects {
+
+        color: #000000;
+
+        &__header {
+            text-shadow: 3px 3px 5px grey;
+        }
+
+        &__cell {
+            border:1px solid #ffc97b;
+            box-shadow: 3px 3px 3px 3px grey;
+        }
+
+        &__button {
+            background-color: #fbf4f9;
+            border-color: #ffc97b;
+
+            &:hover {
+                background-color: #ffe6eb;
+                box-shadow: 0 0 1px 1px grey;
+            }
+        }
+        
+    }
+}
