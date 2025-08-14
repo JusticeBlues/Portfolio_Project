@@ -23,26 +23,22 @@
 }
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   height: 4rem;
   width: 100%;
   background-color: #44558f;
-  top: 0;
-  position: sticky;
 }
 
 .headerlink {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
-  margin-right: 5%;
   background-color: #44558f;
 }
 .headerlink li {
-  font-size: 1.2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  float: left;
+  font-size: clamp(1rem, 2vw, 3rem);
+  margin: 2.5%;
   background-color: #44558f;
   color: #ffffff;
 }
@@ -83,6 +79,9 @@
 }
 
 .bio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 2rem;
   margin-bottom: 5rem;
 }
@@ -105,10 +104,8 @@
   text-shadow: 3px 3px 5px grey;
 }
 .bio__main {
-  align-self: center;
   text-align: center;
   font-size: clamp(1rem, 2vw, 3rem);
-  height: 60%;
   margin: 1rem;
 }
 .bio__button {
@@ -127,8 +124,6 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .latest-projects__header {
   text-align: center;
@@ -137,17 +132,19 @@
   text-shadow: 3px 3px 5px grey;
 }
 .latest-projects__container {
+  width: 100%;
   display: flex;
 }
 .latest-projects__container2 {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin-top: 0.5rem;
 }
 .latest-projects__cell {
   margin: 1rem;
-  padding: 150px;
+  padding: 40%;
   border: 1px solid #ffc97b;
   box-shadow: 3px 3px 3px 3px grey;
 }
@@ -165,6 +162,4 @@
 
 .content {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }

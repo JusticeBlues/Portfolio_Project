@@ -1,26 +1,22 @@
 .header {  
     display:flex;
-    flex-direction:row;
     justify-content:flex-end;
     align-items:center;
     height:4rem;
     width:100%;
     background-color:#44558f;
-    top:0;
-    position:sticky;
 }
 
 .headerlink {
+    display:flex;
+    justify-content: flex-end;
     list-style-type:none;
-    margin-right:5%;
     background-color:#44558f;
     
     
          li {
-            font-size:1.2rem;
-            margin-left:1rem;
-            margin-right:1rem;
-            float:left;
+            font-size: clamp(1rem, 2vw, 3rem);
+            margin:2.5%;
             background-color:#44558f;
             color:#ffffff;
 
