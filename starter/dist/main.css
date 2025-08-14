@@ -22,7 +22,7 @@
 }
 @media (prefers-color-scheme: dark) {
   * {
-    background-color: #34495e;
+    background-color: #2b4353;
   }
   .bio {
     color: #e3f6f5;
@@ -59,6 +59,35 @@
   .latest-projects__button:hover {
     background-color: #00ffcc;
     box-shadow: 0 0 1px 1px #142d4c;
+  }
+  .header {
+    background-color: #081f37;
+  }
+  .headerlink {
+    background-color: #081f37;
+  }
+  .headerlink li {
+    background-color: #081f37;
+    color: #e3f6f5;
+  }
+  .headerlink li:hover {
+    color: #00ffcc;
+    text-shadow: 2px 2px 2px black;
+  }
+  .logo {
+    background-color: #ffe495;
+  }
+  .logo:hover {
+    background-color: #ffc97b;
+    text-shadow: 0 0 5px silver;
+    box-shadow: 0 0 2px 2px #113f67;
+  }
+  .footer {
+    background-color: #081f37;
+  }
+  .footer__copyright {
+    background-color: #081f37;
+    color: #e3f6f5;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -101,6 +130,35 @@
     background-color: #ffe6eb;
     box-shadow: 0 0 1px 1px grey;
   }
+  .header {
+    background-color: #44558f;
+  }
+  .headerlink {
+    background-color: #44558f;
+  }
+  .headerlink li {
+    background-color: #44558f;
+    color: #ffffff;
+  }
+  .headerlink li:hover {
+    color: #ffe6eb;
+    text-shadow: 2px 2px 2px black;
+  }
+  .logo {
+    background-color: #ffe495;
+  }
+  .logo:hover {
+    background-color: #ffc97b;
+    text-shadow: 0 0 5px silver;
+    box-shadow: 0 0 2px 2px #113f67;
+  }
+  .footer {
+    background-color: #44558f;
+  }
+  .footer__copyright {
+    background-color: #44558f;
+    color: #ffffff;
+  }
 }
 .header {
   display: flex;
@@ -108,28 +166,19 @@
   align-items: center;
   height: 4rem;
   width: 100%;
-  background-color: #44558f;
 }
 
 .headerlink {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  background-color: #44558f;
 }
 .headerlink li {
   font-size: clamp(1rem, 2vw, 3rem);
   margin: 2.5%;
-  background-color: #44558f;
-  color: #ffffff;
-}
-.headerlink li:hover {
-  color: #ffe6eb;
-  text-shadow: 2px 2px 2px black;
 }
 
 .logo {
-  background-color: #ffe495;
   padding: 0.8rem;
   border-radius: 50%;
   width: -moz-fit-content;
@@ -139,14 +188,8 @@
   left: 0;
   position: absolute;
 }
-.logo:hover {
-  background-color: #ffc97b;
-  text-shadow: 0 0 5px silver;
-  box-shadow: 0 0 2px 2px #113f67;
-}
 
 .footer {
-  background-color: #44558f;
   height: 4rem;
   width: 100%;
   display: flex;
@@ -154,10 +197,6 @@
   align-items: center;
   bottom: 0;
   position: static;
-}
-.footer__copyright {
-  background-color: #44558f;
-  color: #ffffff;
 }
 
 .bio {
