@@ -1,11 +1,35 @@
-//nav//
-$navbar-color: #44558f;
-$navbar-text-color:#ffffff;
+//logo//
 $logo-color:#ffe495;
 $logo-hover-color:#ffc97b;
+$logo-text-shadow:#352f44;
+$logo-box-shadow:#113f67;
 
-//main//
-$background-color:#e6f7f7;
-$border-color:#ffc97b;
-$button-color:#fbf4f9;
-$hover-color:#ffe6eb;
+//LIGHT//
+//light root//
+$light-text-color: #000000;
+
+//light nav//
+$light-navbar-color: #44558f;
+$light-navbar-text-color:#ffffff;
+
+//light main//
+$light-background-color:#e6f7f7;
+$light-border-color:#ffc97b;
+$light-button-color:#fbf4f9;
+$light-hover-color:#ffe6eb;
+$light-mode-shadows:#5c5470;
+
+//DARK//
+//dark root//
+$dark-text-color: #c0e8f6;
+
+//dark nav//
+$dark-navbar-color: #081f37;
+$dark-navbar-text-color:#e3f6f5;
+
+//dark main//
+$dark-background-color:#2b4353;
+$dark-border-color:#5a37c3;
+$dark-button-color:#0cca98;
+$dark-hover-color:#00ffcc;
+$dark-mode-shadows:#272343;

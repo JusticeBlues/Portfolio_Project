@@ -29,10 +29,10 @@
   }
   .bio__photo {
     border: 1px solid #5a37c3;
-    box-shadow: 3px 3px 3px 3px #142d4c;
+    box-shadow: 3px 3px 3px 3px #272343;
   }
   .bio__header {
-    text-shadow: 3px 3px 5px #142d4c;
+    text-shadow: 3px 3px 5px #272343;
   }
   .bio__button {
     background-color: #0cca98;
@@ -40,17 +40,17 @@
   }
   .bio__button:hover {
     background-color: #00ffcc;
-    box-shadow: 0 0 1px 1px #142d4c;
+    box-shadow: 0 0 1px 1px #272343;
   }
   .latest-projects {
     color: #c0e8f6;
   }
   .latest-projects__header {
-    text-shadow: 3px 3px 5px #142d4c;
+    text-shadow: 3px 3px 5px #272343;
   }
   .latest-projects__cell {
     border: 1px solid #5a37c3;
-    box-shadow: 3px 3px 3px 3px #142d4c;
+    box-shadow: 3px 3px 3px 3px #272343;
   }
   .latest-projects__button {
     background-color: #0cca98;
@@ -58,7 +58,7 @@
   }
   .latest-projects__button:hover {
     background-color: #00ffcc;
-    box-shadow: 0 0 1px 1px #142d4c;
+    box-shadow: 0 0 1px 1px #272343;
   }
   .header {
     background-color: #081f37;
@@ -72,14 +72,14 @@
   }
   .headerlink li:hover {
     color: #00ffcc;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px #272343;
   }
   .logo {
     background-color: #ffe495;
   }
   .logo:hover {
     background-color: #ffc97b;
-    text-shadow: 0 0 5px silver;
+    text-shadow: 0 0 2px #352f44;
     box-shadow: 0 0 2px 2px #113f67;
   }
   .footer {
@@ -99,10 +99,10 @@
   }
   .bio__photo {
     border: 1px solid #ffc97b;
-    box-shadow: 3px 3px 3px 3px grey;
+    box-shadow: 3px 3px 3px 3px #5c5470;
   }
   .bio__header {
-    text-shadow: 3px 3px 5px grey;
+    text-shadow: 3px 3px 5px #5c5470;
   }
   .bio__button {
     background-color: #fbf4f9;
@@ -110,17 +110,17 @@
   }
   .bio__button:hover {
     background-color: #ffe6eb;
-    box-shadow: 0 0 1px 1px grey;
+    box-shadow: 0 0 1px 1px #5c5470;
   }
   .latest-projects {
     color: #000000;
   }
   .latest-projects__header {
-    text-shadow: 3px 3px 5px grey;
+    text-shadow: 3px 3px 5px #5c5470;
   }
   .latest-projects__cell {
     border: 1px solid #ffc97b;
-    box-shadow: 3px 3px 3px 3px grey;
+    box-shadow: 3px 3px 3px 3px #5c5470;
   }
   .latest-projects__button {
     background-color: #fbf4f9;
@@ -128,7 +128,7 @@
   }
   .latest-projects__button:hover {
     background-color: #ffe6eb;
-    box-shadow: 0 0 1px 1px grey;
+    box-shadow: 0 0 1px 1px #5c5470;
   }
   .header {
     background-color: #44558f;
@@ -142,14 +142,14 @@
   }
   .headerlink li:hover {
     color: #ffe6eb;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px #5c5470;
   }
   .logo {
     background-color: #ffe495;
   }
   .logo:hover {
     background-color: #ffc97b;
-    text-shadow: 0 0 5px silver;
+    text-shadow: 0 0 2px #352f44;
     box-shadow: 0 0 2px 2px #113f67;
   }
   .footer {
@@ -195,7 +195,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0;
 }
 
 body {

@@ -1,91 +1,93 @@
+@use "variables" as *;
+
 @media (prefers-color-scheme: dark) {
     
     * {
-        background-color: #2b4353;
+        background-color: $dark-background-color;
     }
 
     .bio {
-        color: #e3f6f5;
+        color: $dark-text-color;
     
         &__photo {
-            border: 1px solid #5a37c3;
-            box-shadow: 3px 3px 3px 3px #142d4c;
+            border: 1px solid $dark-border-color;
+            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
         }
         
         &__header {
-            text-shadow: 3px 3px 5px #142d4c;
+            text-shadow: 3px 3px 5px $dark-mode-shadows;
         }
 
         &__button {
-            background-color: #0cca98;
-            border-color: #5a37c3;
+            background-color: $dark-button-color;
+            border-color: $dark-border-color;
 
             &:hover {
-                background-color: #00ffcc;
-                box-shadow: 0 0 1px 1px #142d4c;
+                background-color: $dark-hover-color;
+                box-shadow: 0 0 1px 1px $dark-mode-shadows;
             }
         }
     }
 
     .latest-projects {
 
-        color: #e3f6f5;
+        color: $dark-text-color;
         
         &__header {
-            text-shadow: 3px 3px 5px #142d4c;
+            text-shadow: 3px 3px 5px $dark-mode-shadows;
         }
 
         &__cell {
-            border:1px solid #5a37c3;
-            box-shadow: 3px 3px 3px 3px #142d4c;
+            border:1px solid $dark-border-color;
+            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
         }
 
         &__button {
-            background-color: #0cca98;
-            border-color: #5a37c3;
+            background-color: $dark-button-color;
+            border-color: $dark-border-color;
 
             &:hover {
-                background-color: #00ffcc;
-                box-shadow: 0 0 1px 1px #142d4c;
+                background-color: $dark-hover-color;
+                box-shadow: 0 0 1px 1px $dark-mode-shadows;
             }
         }
         
     }
 
     .header {
-        background-color:#081f37;
+        background-color:$dark-navbar-color;
     }
 
     .headerlink {
-        background-color:#081f37;
+        background-color:$dark-navbar-color;
         
         li {
-            background-color:#081f37;
-            color:#e3f6f5;
+            background-color:$dark-navbar-color;
+            color:$dark-navbar-text-color;
 
             &:hover {
-                color:#00ffcc;
-                text-shadow: 2px 2px 2px black;
+                color:$dark-hover-color;
+                text-shadow: 2px 2px 2px $dark-mode-shadows;
             }
         }
     }
 
     .logo {
-        background-color:#ffe495;
+        background-color:$logo-color;
         
         &:hover {
-            background-color:#ffc97b;
-            text-shadow: 0 0 5px silver;
-            box-shadow: 0 0 2px 2px #113f67;
+            background-color:$logo-hover-color;
+            text-shadow: 0 0 2px $logo-text-shadow;
+            box-shadow: 0 0 2px 2px $logo-box-shadow;
         }
     }
 
     .footer {
-        background-color: #081f37;
+        background-color: $dark-navbar-color;
 
         &__copyright {
-            background-color: #081f37;
-            color: #e3f6f5;
+            background-color: $dark-navbar-color;
+            color: $dark-navbar-text-color;
         }
     }
 }
@@ -93,92 +95,92 @@
 @media (prefers-color-scheme: light) {
     
     * {
-        background-color: #e6f7f7;
+        background-color: $light-background-color;
     }
 
     .bio {
         
-        color: #000000;
+        color: $light-text-color;
     
         &__photo {
-            border: 1px solid #ffc97b;
-            box-shadow: 3px 3px 3px 3px grey;
+            border: 1px solid $light-border-color;
+            box-shadow: 3px 3px 3px 3px $light-mode-shadows;
         }
         
         &__header {
-            text-shadow: 3px 3px 5px grey;
+            text-shadow: 3px 3px 5px $light-mode-shadows;
         }
 
         &__button {
-            background-color: #fbf4f9;
-            border-color: #ffc97b;
+            background-color: $light-button-color;
+            border-color: $light-border-color;
 
             &:hover {
-                background-color: #ffe6eb;
-                box-shadow: 0 0 1px 1px grey;
+                background-color: $light-hover-color;
+                box-shadow: 0 0 1px 1px $light-mode-shadows;
             }
         }
     }
 
     .latest-projects {
 
-        color: #000000;
+        color: $light-text-color;
 
         &__header {
-            text-shadow: 3px 3px 5px grey;
+            text-shadow: 3px 3px 5px $light-mode-shadows;
         }
 
         &__cell {
-            border:1px solid #ffc97b;
-            box-shadow: 3px 3px 3px 3px grey;
+            border:1px solid $light-border-color;
+            box-shadow: 3px 3px 3px 3px $light-mode-shadows;
         }
 
         &__button {
-            background-color: #fbf4f9;
-            border-color: #ffc97b;
+            background-color: $light-button-color;
+            border-color: $light-border-color;
 
             &:hover {
-                background-color: #ffe6eb;
-                box-shadow: 0 0 1px 1px grey;
+                background-color: $light-hover-color;
+                box-shadow: 0 0 1px 1px $light-mode-shadows;
             }
         }
         
     }
 
     .header {
-        background-color:#44558f;
+        background-color:$light-navbar-color;
     }
 
     .headerlink {
-        background-color:#44558f;
+        background-color:$light-navbar-color;
         
         li {
-            background-color:#44558f;
-            color:#ffffff;
+            background-color:$light-navbar-color;
+            color:$light-navbar-text-color;
 
             &:hover {
-                color:#ffe6eb;
-                text-shadow: 2px 2px 2px black;
+                color:$light-hover-color;
+                text-shadow: 2px 2px 2px $light-mode-shadows;
             }
         }
     }
 
     .logo {
-        background-color:#ffe495;
+        background-color:$logo-color;
         
         &:hover {
-            background-color:#ffc97b;
-            text-shadow: 0 0 5px silver;
-            box-shadow: 0 0 2px 2px #113f67;
+            background-color:$logo-hover-color;
+            text-shadow: 0 0 2px $logo-text-shadow;
+            box-shadow: 0 0 2px 2px $logo-box-shadow;
         }
     }
 
     .footer {
-        background-color: #44558f;
+        background-color: $light-navbar-color;
 
         &__copyright {
-            background-color: #44558f;
-            color: #ffffff;
+            background-color: $light-navbar-color;
+            color: $light-navbar-text-color;
         }
     }
 }
