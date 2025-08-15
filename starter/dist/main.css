@@ -25,7 +25,7 @@
     background-color: #2b4353;
   }
   .bio {
-    color: #e3f6f5;
+    color: #c0e8f6;
   }
   .bio__photo {
     border: 1px solid #5a37c3;
@@ -43,7 +43,7 @@
     box-shadow: 0 0 1px 1px #142d4c;
   }
   .latest-projects {
-    color: #e3f6f5;
+    color: #c0e8f6;
   }
   .latest-projects__header {
     text-shadow: 3px 3px 5px #142d4c;
@@ -174,7 +174,7 @@
   list-style-type: none;
 }
 .headerlink li {
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1rem, 2vw, 2.3rem);
   margin: 2.5%;
 }
 
@@ -196,7 +196,16 @@
   justify-content: center;
   align-items: center;
   bottom: 0;
-  position: static;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .bio {
