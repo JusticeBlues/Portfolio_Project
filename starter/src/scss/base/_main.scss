@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
 //bio//
 
 .bio {
@@ -75,9 +85,9 @@
         border-radius:10%;
         
     
-}
+    }
 
-.content{
-    display: flex;
-}
+    .content{
+        display: flex;
+    }
 }
