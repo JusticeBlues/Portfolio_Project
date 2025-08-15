@@ -1,6 +1,5 @@
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   height: 4rem;
@@ -8,14 +7,14 @@
 }
 
 .headerlink {
+  display: flex;
+  justify-content: flex-end;
   list-style-type: none;
-  margin-right: 5%;
 
   li {
     font-size: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    float: left;
   }
 }
 
