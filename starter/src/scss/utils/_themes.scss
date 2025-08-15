@@ -1,97 +1,5 @@
 @use "variables" as *;
 
-@media (prefers-color-scheme: dark) {
-    
-    * {
-        background-color: $dark-background-color;
-    }
-
-    .bio {
-        color: $dark-text-color;
-    
-        &__photo {
-            border: 1px solid $dark-border-color;
-            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
-        }
-        
-        &__header {
-            text-shadow: 3px 3px 5px $dark-mode-shadows;
-        }
-
-        &__button {
-            background-color: $dark-button-color;
-            border-color: $dark-border-color;
-
-            &:hover {
-                background-color: $dark-hover-color;
-                box-shadow: 0 0 1px 1px $dark-mode-shadows;
-            }
-        }
-    }
-
-    .latest-projects {
-
-        color: $dark-text-color;
-        
-        &__header {
-            text-shadow: 3px 3px 5px $dark-mode-shadows;
-        }
-
-        &__cell {
-            border:1px solid $dark-border-color;
-            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
-        }
-
-        &__button {
-            background-color: $dark-button-color;
-            border-color: $dark-border-color;
-
-            &:hover {
-                background-color: $dark-hover-color;
-                box-shadow: 0 0 1px 1px $dark-mode-shadows;
-            }
-        }
-        
-    }
-
-    .header {
-        background-color:$dark-navbar-color;
-    }
-
-    .headerlink {
-        background-color:$dark-navbar-color;
-        
-        li {
-            background-color:$dark-navbar-color;
-            color:$dark-navbar-text-color;
-
-            &:hover {
-                color:$dark-hover-color;
-                text-shadow: 2px 2px 2px $dark-mode-shadows;
-            }
-        }
-    }
-
-    .logo {
-        background-color:$logo-color;
-        
-        &:hover {
-            background-color:$logo-hover-color;
-            text-shadow: 0 0 2px $logo-text-shadow;
-            box-shadow: 0 0 2px 2px $logo-box-shadow;
-        }
-    }
-
-    .footer {
-        background-color: $dark-navbar-color;
-
-        &__copyright {
-            background-color: $dark-navbar-color;
-            color: $dark-navbar-text-color;
-        }
-    }
-}
-
 @media (prefers-color-scheme: light) {
     
     * {
@@ -182,5 +90,134 @@
             background-color: $light-navbar-color;
             color: $light-navbar-text-color;
         }
+    }
+
+    .headerlinkmobile {
+        background: $light-navbar-color;
+    }
+
+    .headerlinkmobile li {
+        background: $light-navbar-color;
+        color: $light-navbar-text-color;
+
+        &:hover {
+            color:$light-hover-color;
+            text-shadow: 2px 2px 2px $light-mode-shadows;
+        }
+    }
+
+    .hamburger {
+        --color: #ffe495; /* bar color */
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    
+    * {
+        background-color: $dark-background-color;
+    }
+
+    .bio {
+        color: $dark-text-color;
+    
+        &__photo {
+            border: 1px solid $dark-border-color;
+            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
+        }
+        
+        &__header {
+            text-shadow: 3px 3px 5px $dark-mode-shadows;
+        }
+
+        &__button {
+            background-color: $dark-button-color;
+            border-color: $dark-border-color;
+
+            &:hover {
+                background-color: $dark-hover-color;
+                box-shadow: 0 0 1px 1px $dark-mode-shadows;
+            }
+        }
+    }
+
+    .latest-projects {
+
+        color: $dark-text-color;
+        
+        &__header {
+            text-shadow: 3px 3px 5px $dark-mode-shadows;
+        }
+
+        &__cell {
+            border:1px solid $dark-border-color;
+            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
+        }
+
+        &__button {
+            background-color: $dark-button-color;
+            border-color: $dark-border-color;
+
+            &:hover {
+                background-color: $dark-hover-color;
+                box-shadow: 0 0 1px 1px $dark-mode-shadows;
+            }
+        }
+        
+    }
+
+    .header {
+        background-color:$dark-navbar-color;
+    }
+
+    .headerlink {
+        background-color:$dark-navbar-color;
+        
+        li {
+            background-color:$dark-navbar-color;
+            color:$dark-navbar-text-color;
+
+            &:hover {
+                color:$dark-hover-color;
+                text-shadow: 2px 2px 2px $dark-mode-shadows;
+            }
+        }
+    }
+
+    .logo {
+        background-color:$logo-color;
+        
+        &:hover {
+            background-color:$logo-hover-color;
+            text-shadow: 0 0 2px $logo-text-shadow;
+            box-shadow: 0 0 2px 2px $logo-box-shadow;
+        }
+    }
+
+    .footer {
+        background-color: $dark-navbar-color;
+
+        &__copyright {
+            background-color: $dark-navbar-color;
+            color: $dark-navbar-text-color;
+        }
+    }
+
+    .headerlinkmobile {
+        background: $dark-navbar-color;
+    }
+
+    .headerlinkmobile li {
+        background: $dark-navbar-color;
+        color: $dark-navbar-text-color;
+
+        &:hover {
+            color:$dark-hover-color;
+            text-shadow: 2px 2px 2px $dark-mode-shadows;
+        }
+    }
+
+    .hamburger {
+        --color: #ffe495; /* bar color */
     }
 }

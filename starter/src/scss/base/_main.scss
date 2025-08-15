@@ -91,3 +91,22 @@ main {
         display: flex;
     }
 }
+
+@media screen and (max-width:1024px) {
+    .bio {
+    display: flex;
+    flex-direction:column;
+
+    &__text {
+        text-align:center;
+        }
+    }
+
+    .latest-projects {
+        &__container {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+        }
+    }
+}

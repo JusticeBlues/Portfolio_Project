@@ -5,22 +5,3 @@
     right:0;
     font: 12pt 'Times New Roman', Times, serif;
 }
-
-@media screen and (max-width:1024px) {
-    .bio {
-    display: flex;
-    flex-direction:column;
-
-    &__text {
-        text-align:center;
-        }
-    }
-
-    .latest-projects {
-        &__container {
-            display: flex;
-            flex-direction:column;
-            align-items: center;
-        }
-    }
-}
