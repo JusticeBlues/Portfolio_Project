@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../dist/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="../dist/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet">
-</head>
+  <body id="body">
+    <header class="header">
+      <div class="logo">KO</div>
+      <ul class="headerlink">
+        <li>Skills</li>
+        <li>Projects</li>
+        <li>Resume</li>
+        <li>Contact</li>
+      </ul>
+      <label class="hamburger" aria-label="Toggle menu">
+        <input type="checkbox" aria-hidden="true" />
+        <span class="bar"></span>
+      </label>
+      <nav>
+        <ul class="headerlinkmobile">
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="bio" class="content bio">
+        <img
+          class="bio__photo"
+          src="img/me.jpg"
+          alt="It's me!"
+          width="500"
+          height="500"
+        />
+        <div class="bio__text">
+          <h1 class="bio__header">Kevin's Web Development Portfolio</h1>
+          <p class="bio__main">
+            Nice to meet you! My name is Kevin O'Neill. I am an aspiring Front
+            End Web Devoloper with creative roots and have been formally
+            educated in several fine art mediums. I was raised in NYC and am
+            currently based out of the DMV area. While I consider myself tech
+            savvy I am currently in the process of studying to further solidify
+            my education in Information Technology.
+          </p>
+          <button class="bio__button">Click Here</button>
+        </div>
+      </section>
 
-<body id="body">
-  <header class="header">
-    <div class="logo">KO</div>
-    <ul class="headerlink">
-      <li>Skills</li>
-      <li>Projects</li>
-      <li>Resume</li>
-      <li>Contact</li>
-    </ul>
-  </header>
-  <main id="main">
-    <section id="bio" class="content bio">
-      <img class="bio__photo" src="img/me.jpg" alt="It's me!" width="500" height="500">
-      <div class="bio__text">
-        <h1 class="bio__header">Kevin's Web Development Portfolio</h1>
-        <p class="bio__main">Nice to meet you! My name is Kevin O'Neill. I am an aspiring Front End Web Devoloper with creative roots and have been formally educated in several fine art mediums. I was raised in NYC and am currently based out of the DMV area. While I consider myself tech savvy I am currently in the process of studying to further solidify my education in Information Technology.</p>
-        <button class="bio__button">Click Here</button>
-      </div>
-    </section>
-    
-    <section id="latest-projects" class="content latest-projects">
- 
+      <section id="latest-projects" class="content latest-projects">
         <h1 class="latest-projects__header">Projects</h1>
         <p class="latest-projects__main"></p>
-        
-        <div class="latest-projects__container">    
-              
+
+        <div class="latest-projects__container">
           <div class="latest-projects__container2">
             <div class="latest-projects__cell"></div>
             <button class="latest-projects__button">Project 1</button>
-          </div>  
+          </div>
           <div class="latest-projects__container2">
             <div class="latest-projects__cell"></div>
             <button class="latest-projects__button">Project 2</button>
@@ -50,13 +73,12 @@
           <div class="latest-projects__container2">
             <div class="latest-projects__cell"></div>
             <button class="latest-projects__button">Project 3</button>
-          </div>  
-        </div>  
-    </section>
-  </main>
-  <footer class="footer">
-   <p class="footer__copyright">&copy; Kevin O'Neill 2025</p>
-  </footer>
-</body>
-
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&copy; Kevin O'Neill 2025</p>
+    </footer>
+  </body>
 </html>

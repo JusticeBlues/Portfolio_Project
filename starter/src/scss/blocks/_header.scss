@@ -1,29 +1,191 @@
-.header {  
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    height:4rem;
-    width:100%;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  background-color: #44558f;
+  top: 0;
+  position: sticky;
 }
 
 .headerlink {
-    display:flex;
-    justify-content: flex-end;
-    list-style-type:none;
-    
-    
-         li {
-            font-size: clamp(1rem, 2vw, 2.3rem);
-            margin:2.5%;
-        }
+  list-style-type: none;
+  margin-right: 5%;
+  background-color: #44558f;
+
+  li {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    float: left;
+    background-color: #44558f;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffe6eb;
+      text-shadow: 2px 2px 2px black;
+    }
+  }
 }
 
 .logo {
-    padding:0.8rem;
-    border-radius: 50%;
-    width:fit-content;
-    margin:0.5rem;
-    font: bold 18px monospace;
-    left:0;
-    position:absolute;
+  background-color: #ffe495;
+  padding: 0.8rem;
+  width: fit-content;
+  margin: 0.5rem;
+  font: bold 18px monospace;
+  left: 0;
+  position: absolute;
+
+  &:hover {
+    background-color: #ffc97b;
+    text-shadow: 0 0 5px silver;
+    box-shadow: 0 0 2px 2px #113f67;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .headerlink {
+    display: none;
+  }
+
+  .hamburger {
+    --size: 28px; /* bar length */
+    --thickness: 2px; /* bar height   */
+    --gap: 6px; /* space between bars */
+    --color: #111; /* bar color */
+    --duration: 0.2s; /* animation speed */
+    --pad: 10px; /* clickable padding around icon */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--pad);
+    cursor: pointer;
+    background-color: transparent; /* still fine */
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Optional hover feel */
+  .hamburger:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  /* The hidden-but-focusable checkbox drives the animation */
+  .hamburger > input {
+    position: absolute;
+    inset: 0;
+    opacity: 0; /* keep it focusable for keyboard users */
+    cursor: pointer;
+  }
+
+  /* Middle bar */
+  .hamburger .bar {
+    position: relative;
+    width: var(--size);
+    height: var(--thickness);
+    background: var(--color);
+    border-radius: var(--radius);
+    display: block;
+    transition: background-color var(--duration) ease;
+  }
+
+  /* Top & bottom bars */
+  .hamburger .bar::before,
+  .hamburger .bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--thickness);
+    background: var(--color);
+    border-radius: var(--radius);
+    transform-origin: center;
+    transition: transform var(--duration) ease, top var(--duration) ease,
+      bottom var(--duration) ease;
+  }
+
+  /* Position the top/bottom bars */
+  .hamburger .bar::before {
+    top: calc(-1 * (var(--gap) + var(--thickness)));
+  }
+  .hamburger .bar::after {
+    bottom: calc(-1 * (var(--gap) + var(--thickness)));
+  }
+
+  /* Focus ring for keyboard users */
+  .hamburger > input:focus-visible + .bar {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+
+  /* Checked state → morph into an “X” */
+  .hamburger > input:checked + .bar {
+    background: transparent;
+  }
+  .hamburger > input:checked + .bar::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .hamburger > input:checked + .bar::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  input[type="checkbox"]:checked {
+    outline: 2px solid #000;
+  }
+
+  .hamburger > input:checked + .bar {
+    background-color: transparent;
+  }
+  .hamburger > input:checked + .bar::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .hamburger > input:checked + .bar::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* 3) Target ANY following sibling (general) */
+  .hamburger:has(> input:checked) ~ nav {
+    display: block;
+  }
+
+  .headerlinkmobile {
+    position: fixed;
+    top: 62px;
+    left: revert-layer;
+    width: 75px;
+    padding: 25px;
+    list-style-type: none;
+    background: #44558f;
+  }
+
+  .headerlinkmobile li {
+    background: #44558f;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hamburger .bar,
+  .hamburger .bar::before,
+  .hamburger .bar::after {
+    transition: none;
+  }
 }
