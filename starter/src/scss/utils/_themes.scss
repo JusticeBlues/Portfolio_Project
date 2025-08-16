@@ -11,7 +11,7 @@
         color: $light-text-color;
     
         &__photo {
-            border: 1px solid $light-border-color;
+            border: 2px solid $light-border-color;
             box-shadow: 3px 3px 3px 3px $light-mode-shadows;
         }
         
@@ -21,7 +21,7 @@
 
         &__button {
             background-color: $light-button-color;
-            border-color: $light-border-color;
+            border-color: $light-button-border;
 
             &:hover {
                 background-color: $light-hover-color;
@@ -38,14 +38,9 @@
             text-shadow: 3px 3px 5px $light-mode-shadows;
         }
 
-        &__cell {
-            border:1px solid $light-border-color;
-            box-shadow: 3px 3px 3px 3px $light-mode-shadows;
-        }
-
         &__button {
             background-color: $light-button-color;
-            border-color: $light-border-color;
+            border-color: $light-button-border;
 
             &:hover {
                 background-color: $light-hover-color;
@@ -53,6 +48,14 @@
             }
         }
         
+    }
+
+    .card {
+        border: 2px solid $light-border-color;
+
+        &__image {
+            border: 2px solid $light-border-color;
+        }
     }
 
     .header {
@@ -122,7 +125,7 @@
         color: $dark-text-color;
     
         &__photo {
-            border: 1px solid $dark-border-color;
+            border: 2px solid $dark-border-color;
             box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
         }
         
@@ -132,7 +135,7 @@
 
         &__button {
             background-color: $dark-button-color;
-            border-color: $dark-border-color;
+            border-color: $dark-button-border;
 
             &:hover {
                 background-color: $dark-hover-color;
@@ -149,14 +152,9 @@
             text-shadow: 3px 3px 5px $dark-mode-shadows;
         }
 
-        &__cell {
-            border:1px solid $dark-border-color;
-            box-shadow: 3px 3px 3px 3px $dark-mode-shadows;
-        }
-
         &__button {
             background-color: $dark-button-color;
-            border-color: $dark-border-color;
+            border-color: $dark-button-border;
 
             &:hover {
                 background-color: $dark-hover-color;
@@ -164,6 +162,14 @@
             }
         }
         
+    }
+
+    .card {
+        border: 2px solid $dark-border-color;
+
+        &__image {
+            border: 2px solid $dark-border-color;
+        }
     }
 
     .header {
