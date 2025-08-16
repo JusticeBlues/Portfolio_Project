@@ -12,7 +12,7 @@
     background-color: #e6f7f7;
   }
   .bio {
-    color: #000000;
+    color: #050A50;
   }
   .bio__photo {
     border: 2px solid #005792;
@@ -30,7 +30,7 @@
     box-shadow: 0 0 1px 1px #5c5470;
   }
   .latest-projects {
-    color: #000000;
+    color: #050A50;
   }
   .latest-projects__header {
     text-shadow: 3px 3px 5px #5c5470;
@@ -45,9 +45,15 @@
   }
   .card {
     border: 2px solid #005792;
+    background-color: #d5eeff;
   }
   .card__image {
     border: 2px solid #005792;
+  }
+  .card__description {
+    color: #050A50;
+    background-color: #d5eeff;
+    text-shadow: 1px 1px 1px #5c5470;
   }
   .header {
     background-color: #44558f;
@@ -95,13 +101,13 @@
 }
 @media (prefers-color-scheme: dark) {
   * {
-    background-color: #2b4353;
+    background-color: #1b2343;
   }
   .bio {
-    color: #c0e8f6;
+    color: #E2F0FE;
   }
   .bio__photo {
-    border: 2px solid #ffc97b;
+    border: 2px solid #755da3;
     box-shadow: 3px 3px 3px 3px #272343;
   }
   .bio__header {
@@ -116,7 +122,7 @@
     box-shadow: 0 0 1px 1px #272343;
   }
   .latest-projects {
-    color: #c0e8f6;
+    color: #E2F0FE;
   }
   .latest-projects__header {
     text-shadow: 3px 3px 5px #272343;
@@ -130,20 +136,26 @@
     box-shadow: 0 0 1px 1px #272343;
   }
   .card {
-    border: 2px solid #ffc97b;
+    border: 2px solid #755da3;
+    background-color: #39516F;
   }
   .card__image {
-    border: 2px solid #ffc97b;
+    border: 2px solid #755da3;
+  }
+  .card__description {
+    color: #E2F0FE;
+    background-color: #39516F;
+    text-shadow: 1px 1px 1px #272343;
   }
   .header {
-    background-color: #081f37;
+    background-color: #080f23;
   }
   .headerlink {
-    background-color: #081f37;
+    background-color: #080f23;
   }
   .headerlink li {
-    background-color: #081f37;
-    color: #e3f6f5;
+    background-color: #080f23;
+    color: #E2F0FE;
   }
   .headerlink li:hover {
     color: #00ffcc;
@@ -158,18 +170,18 @@
     box-shadow: 0 0 2px 2px #113f67;
   }
   .footer {
-    background-color: #081f37;
+    background-color: #080f23;
   }
   .footer__copyright {
-    background-color: #081f37;
-    color: #e3f6f5;
+    background-color: #080f23;
+    color: #E2F0FE;
   }
   .headerlinkmobile {
-    background: #081f37;
+    background: #080f23;
   }
   .headerlinkmobile li {
-    background: #081f37;
-    color: #e3f6f5;
+    background: #080f23;
+    color: #E2F0FE;
   }
   .headerlinkmobile li:hover {
     color: #00ffcc;
