@@ -1,0 +1,18 @@
+@mixin headertext {
+        text-align: center;
+        font-size: clamp(2rem,6vw,8rem);
+        font-weight: bold;
+}
+
+@mixin pagetext {
+        text-align: center;
+        font-size: clamp(1rem,3vw,4rem);
+        margin: 1rem;
+}
+
+@mixin buttonstyle {
+        font-size: clamp(1rem,3vw,4rem);
+        width:fit-content;
+        border-radius: 20%;
+        padding: 0.5rem;
+}

@@ -365,36 +365,36 @@ main {
 .bio {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 2rem;
   margin-bottom: 5rem;
 }
 .bio__photo {
   margin: 1rem;
-  width: clamp(40%, 400px, 70%);
-  height: clamp(40%, 400px, 70%);
+  width: clamp(250px, 40%, 1000px);
+  height: clamp(250px, 40%, 1000px);
 }
 .bio__text {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.bio__header {
+.bio__section {
   text-align: center;
-  font-size: 8vw;
+  font-size: clamp(2rem, 6vw, 8rem);
   font-weight: bold;
 }
 .bio__main {
   text-align: center;
-  font-size: 2vw;
+  font-size: clamp(1rem, 3vw, 4rem);
   margin: 1rem;
 }
 .bio__button {
-  font-size: 2vw;
+  font-size: clamp(1rem, 3vw, 4rem);
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20%;
-  padding: 0.5vw;
+  padding: 0.5rem;
 }
 
 .latest-projects {
@@ -402,21 +402,21 @@ main {
   display: flex;
   flex-direction: column;
 }
-.latest-projects__header {
+.latest-projects__section {
   text-align: center;
-  font-size: 8vw;
+  font-size: clamp(2rem, 6vw, 8rem);
   font-weight: bold;
 }
 .latest-projects__button {
-  font-size: 2vw;
+  font-size: clamp(1rem, 3vw, 4rem);
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20%;
-  padding: 0.5vw;
+  padding: 0.5rem;
 }
 .latest-projects__main {
   text-align: center;
-  font-size: 2vw;
+  font-size: clamp(1rem, 3vw, 4rem);
   margin: 1rem;
 }
 .latest-projects__gallery {
@@ -435,10 +435,9 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem;
-  width: 90%;
+  width: clamp(250px, 90%, 1000px);
   box-shadow: 2px 2px 2px black;
   padding-top: 1vw;
-  aspect-ratio: 16/9;
   border-radius: 2%;
 }
 .card__image {
@@ -446,64 +445,28 @@ main {
 }
 .card__description {
   text-align: center;
-  padding: 1vw;
-  font-size: 1.5vw;
-  height: 8.3vw;
+  font-size: clamp(1rem, 3vw, 4rem);
+  margin: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   .bio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .bio__header {
-    font-size: 10vw;
-  }
-  .bio__photo {
-    width: 80vw;
   }
   .bio__text {
     text-align: center;
-  }
-  .bio__main {
-    font-size: 4vw;
-  }
-  .bio__button {
-    font-size: 4vw;
-    padding: 1vw;
-  }
-  .latest-projects__header {
-    font-size: 10vw;
-  }
-  .latest-projects__main {
-    font-size: 4vw;
   }
   .latest-projects__gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .latest-projects__button {
-    font-size: 4vw;
-    padding: 1vw;
-  }
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2vw;
-    aspect-ratio: 16/9;
-    width: 90%;
-  }
-  .card__image {
-    width: 95%;
-  }
-  .card__description {
-    padding: 1vw;
-    text-align: center;
-    font-size: 4vw;
-    height: 20vw;
+    padding-top: 3vw;
   }
 }
