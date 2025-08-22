@@ -401,6 +401,7 @@ main {
 .bio__button:hover {
   border-radius: 20%;
   padding: 1rem;
+  font-weight: bold;
 }
 
 .latest-projects {
@@ -425,6 +426,7 @@ main {
 .latest-projects__button:hover {
   border-radius: 20%;
   padding: 1rem;
+  font-weight: bold;
 }
 .latest-projects__main {
   text-align: center;
