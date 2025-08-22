@@ -13,6 +13,13 @@
 @mixin buttonstyle {
         font-size: clamp(1rem,3vw,4rem);
         width:fit-content;
-        border-radius: 20%;
         padding: 0.5rem;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+
+        &:hover {
+                border-radius:20%;
+                padding:1rem;
+        }
 }

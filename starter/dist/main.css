@@ -393,8 +393,14 @@ main {
   font-size: clamp(1rem, 3vw, 4rem);
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 20%;
   padding: 0.5rem;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.bio__button:hover {
+  border-radius: 20%;
+  padding: 1rem;
 }
 
 .latest-projects {
@@ -411,8 +417,14 @@ main {
   font-size: clamp(1rem, 3vw, 4rem);
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 20%;
   padding: 0.5rem;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.latest-projects__button:hover {
+  border-radius: 20%;
+  padding: 1rem;
 }
 .latest-projects__main {
   text-align: center;
