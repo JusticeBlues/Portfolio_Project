@@ -1,0 +1,74 @@
+h3 {
+    font: bold 36px Times;
+    text-align: center;
+    border: 1px solid #000000;
+    background-color: lightblue;
+    margin-top: 10px;
+    width: 298px;
+    }
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    }
+.card {
+    background-color: #DFE5FF;
+    margin: 10px;
+    padding-top: 0.5px;
+    padding-left: 5px;
+    width: 305px;
+    height: 585px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px 5px #909090;
+    }
+.facts {
+    border: 1px solid #000000;
+    background-color: lightblue;
+    padding-top: -12px;
+    padding-left: 10px;
+    padding-right: 8px;
+    width: 280px;
+    height: 314px;
+    }
+img {
+    width: 298px; 
+    height: 200px;
+    margin-top: -32px;
+    border: 1px solid black;
+    }
+#wolf-factoid {
+    height: 50px ;
+    width:277px;
+    margin-top: 5px ;
+    margin-left: -6px ;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    border: 2px dotted yellow;
+    font-style: italic;
+    text-align: center;
+    }
+.factoid {
+    height: 50px ;
+    width:277px ;
+    margin-top: 5px ;
+    margin-left: -6px ;
+    padding: 5px;
+    border: 2px dotted yellow;
+    font-style: italic;
+    text-align: center;
+    }
+li {
+    margin-left: -40px;
+    list-style-type: none;
+    }
+span {
+    font-weight: bold;
+    color: red
+    }
+.information {
+    margin: -5px ;
+    border: 2px dotted yellow;
+    padding: 5px;
+    height: 110px;
+    text-align: center ;
+    }
