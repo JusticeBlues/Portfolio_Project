@@ -47,6 +47,14 @@
                 box-shadow: 0 0 1px 1px $light-mode-shadows;
             }
         }
+
+        &__link {
+            background-color: $light-button-color;
+
+            &:hover {
+                background-color: $light-hover-color;
+            }
+        }
         
     }
 
@@ -166,6 +174,14 @@
             &:hover {
                 background-color: $dark-hover-color;
                 box-shadow: 0 0 1px 1px $dark-mode-shadows;
+            }
+        }
+
+        &__link {
+            background-color: $dark-button-color;
+
+            &:hover {
+                background-color: $dark-hover-color;
             }
         }
         

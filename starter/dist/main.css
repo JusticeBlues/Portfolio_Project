@@ -43,6 +43,12 @@
     background-color: #ffe6eb;
     box-shadow: 0 0 1px 1px #5c5470;
   }
+  .latest-projects__link {
+    background-color: #fbf4f9;
+  }
+  .latest-projects__link:hover {
+    background-color: #ffe6eb;
+  }
   .card {
     border: 2px solid #005792;
     background-color: #d5eeff;
@@ -134,6 +140,12 @@
   .latest-projects__button:hover {
     background-color: #00ffcc;
     box-shadow: 0 0 1px 1px #272343;
+  }
+  .latest-projects__link {
+    background-color: #0cca98;
+  }
+  .latest-projects__link:hover {
+    background-color: #00ffcc;
   }
   .card {
     border: 2px solid #755da3;
@@ -426,6 +438,17 @@ main {
 .latest-projects__button:hover {
   border-radius: 20%;
   padding: 1rem;
+  font-weight: bold;
+}
+.latest-projects__link {
+  font-size: clamp(1rem, 3vw, 4rem);
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  color: #000000;
+}
+.latest-projects__link:hover {
   font-weight: bold;
 }
 .latest-projects__main {

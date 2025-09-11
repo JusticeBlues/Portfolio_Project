@@ -24,3 +24,16 @@
                 font-weight:bold;
         }
 }
+
+@mixin linkstyle {
+        font-size: clamp(1rem,3vw,4rem);
+        text-decoration: none;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        color:#000000;
+
+        &:hover {
+                font-weight:bold;
+        }
+}
