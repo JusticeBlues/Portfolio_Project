@@ -469,13 +469,14 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 1rem;
-  width: clamp(250px, 90%, 1000px);
   box-shadow: 2px 2px 2px black;
   padding-top: 1vw;
   border-radius: 2%;
+  flex: 1 1 300px;
+  max-width: 1000px;
 }
 .card__image {
   width: 95%;
