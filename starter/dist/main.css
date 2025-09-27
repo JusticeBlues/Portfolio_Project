@@ -98,14 +98,22 @@
     background-color: #44558f;
     color: #ffffff;
   }
-  .headerlinkmobile {
+  .headerlistmobile {
     background: #44558f;
   }
-  .headerlinkmobile li {
+  .headerlistmobile__link {
     background: #44558f;
     color: #ffffff;
   }
-  .headerlinkmobile li:hover {
+  .headerlistmobile__link:hover {
+    color: #ffe6eb;
+    text-shadow: 2px 2px 2px #5c5470;
+  }
+  .headerlistmobile li {
+    background: #44558f;
+    color: #ffffff;
+  }
+  .headerlistmobile li:hover {
     color: #ffe6eb;
     text-shadow: 2px 2px 2px #5c5470;
   }
@@ -204,14 +212,22 @@
     background-color: #080f23;
     color: #E2F0FE;
   }
-  .headerlinkmobile {
+  .headerlistmobile {
     background: #080f23;
   }
-  .headerlinkmobile li {
+  .headerlistmobile__link {
     background: #080f23;
     color: #E2F0FE;
   }
-  .headerlinkmobile li:hover {
+  .headerlistmobile__link:hover {
+    color: #00ffcc;
+    text-shadow: 2px 2px 2px #272343;
+  }
+  .headerlistmobile li {
+    background: #080f23;
+    color: #E2F0FE;
+  }
+  .headerlistmobile li:hover {
     color: #00ffcc;
     text-shadow: 2px 2px 2px #272343;
   }
@@ -264,7 +280,7 @@ nav {
 }
 
 @media screen and (max-width: 1024px) {
-  .headerlink {
+  .headerlist {
     display: none;
   }
   .hamburger {
@@ -358,7 +374,7 @@ nav {
   .hamburger:has(> input:checked) ~ nav {
     display: block;
   }
-  .headerlinkmobile {
+  .headerlistmobile {
     position: fixed;
     top: 62px;
     left: revert-layer;
@@ -366,7 +382,10 @@ nav {
     padding: 25px;
     list-style-type: none;
   }
-  .headerlinkmobile li {
+  .headerlistmobile__link {
+    text-decoration: none;
+  }
+  .headerlistmobile li {
     cursor: pointer;
   }
 }
