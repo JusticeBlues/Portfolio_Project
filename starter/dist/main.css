@@ -64,14 +64,22 @@
   .header {
     background-color: #44558f;
   }
-  .headerlink {
+  .headerlist {
     background-color: #44558f;
   }
-  .headerlink li {
+  .headerlist li {
     background-color: #44558f;
     color: #ffffff;
   }
-  .headerlink li:hover {
+  .headerlist li:hover {
+    color: #ffe6eb;
+    text-shadow: 2px 2px 2px #5c5470;
+  }
+  .headerlist__link {
+    background-color: #44558f;
+    color: #ffffff;
+  }
+  .headerlist__link:hover {
     color: #ffe6eb;
     text-shadow: 2px 2px 2px #5c5470;
   }
@@ -162,14 +170,22 @@
   .header {
     background-color: #080f23;
   }
-  .headerlink {
+  .headerlist {
     background-color: #080f23;
   }
-  .headerlink li {
+  .headerlist li {
     background-color: #080f23;
     color: #E2F0FE;
   }
-  .headerlink li:hover {
+  .headerlist li:hover {
+    color: #00ffcc;
+    text-shadow: 2px 2px 2px #272343;
+  }
+  .headerlist__link {
+    background-color: #080f23;
+    color: #E2F0FE;
+  }
+  .headerlist__link:hover {
     color: #00ffcc;
     text-shadow: 2px 2px 2px #272343;
   }
@@ -211,15 +227,21 @@
   width: 100%;
 }
 
-.headerlink {
+.headerlist {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
 }
-.headerlink li {
+.headerlist li {
   font-size: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.headerlist__link {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
 }
 
 .logo {

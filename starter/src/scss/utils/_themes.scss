@@ -77,10 +77,20 @@
         background-color:$light-navbar-color;
     }
 
-    .headerlink {
+    .headerlist {
         background-color:$light-navbar-color;
         
         li {
+            background-color:$light-navbar-color;
+            color:$light-navbar-text-color;
+
+            &:hover {
+                color:$light-hover-color;
+                text-shadow: 2px 2px 2px $light-mode-shadows;
+            }
+        }
+
+        &__link {
             background-color:$light-navbar-color;
             color:$light-navbar-text-color;
 
@@ -206,10 +216,20 @@
         background-color:$dark-navbar-color;
     }
 
-    .headerlink {
+    .headerlist {
         background-color:$dark-navbar-color;
         
         li {
+            background-color:$dark-navbar-color;
+            color:$dark-navbar-text-color;
+
+            &:hover {
+                color:$dark-hover-color;
+                text-shadow: 2px 2px 2px $dark-mode-shadows;
+            }
+        }
+
+        &__link {
             background-color:$dark-navbar-color;
             color:$dark-navbar-text-color;
 

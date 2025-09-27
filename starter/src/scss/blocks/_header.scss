@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.headerlink {
+.headerlist {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
@@ -15,6 +15,13 @@
     font-size: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  &__link {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
   }
 }
 
